@@ -1,0 +1,202 @@
+$mainFont: 'Encode Sans', sans-serif;
+$yellow:#f2c355 !important;
+$blue:#052c52 !important;
+*{
+    font-family: $mainFont
+}
+/*
+---------------
+Header start
+---------------
+*/
+#Header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 15;
+    width: 100%;
+    background: #fff;
+    .mainNav{
+        li{
+            padding:1px 15px; 
+            &:hover{
+                background: $blue;
+                a{
+                    color:$yellow;
+                }
+            }
+            &.mainIcon{
+                i{
+                    font-size: 0.8em !important;
+                }
+            }
+            &.liPhone{
+                font-size: 0.85em;
+                background:$blue;
+                color:$yellow;
+                i{
+                color:$yellow;
+
+                }
+                p{
+                    margin:5px;
+                }
+            }
+            &:nth-child(6){
+                border:2px solid $yellow;
+
+            }
+        }
+    }
+}
+/*
+---------------
+Header end
+---------------
+*/
+
+
+/*
+---------------
+Join Me Start
+---------------
+*/
+.joinBtn2{
+    &:hover{
+        background: $yellow;
+    }
+    background: $blue;
+    color:#fff;
+}
+#JoinMe{
+    background: url(https://htmlstream.com/preview/unify-v2.6/multipage/marketing/assets/img-temp/1920x1080/img1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 9rem;
+    background-repeat: no-repeat;
+    position: relative;
+    .joinLeft{
+        color:#fff;
+        padding-top: 6rem;
+        padding-right: 9rem;
+        p{
+            line-height: 35px;
+        }
+        .joinBtn1{
+            background: $yellow;
+
+            &:hover{
+                background: $blue;
+                border-color:$blue
+            }
+            color:#fff;
+        }
+  
+    }
+    .joinRight{
+        padding:25px ;
+        background: #fff;
+        opacity: 0.9;
+        .btnRegister{
+            background: $blue;
+            color:#fff;
+        }
+        .btnFb{
+            width: 50%;
+            background: #3b5998 !important;
+            color:#fff;
+            border-radius: 0 !important;
+            i{
+                font-size: 0.9em;
+                margin-right:8px;
+            }
+        }
+        .btnTwitter{
+            width: 50%;
+            background: #00acee !important;
+            color:#fff;
+            border-radius: 0 !important;
+        }
+    }
+    .mainOverlay{
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height: 100%;
+        opacity: 0.4;
+        background: #000;
+    }
+
+}
+
+/*
+---------------
+Join Me End
+---------------
+*/
+
+
+/*
+---------------
+About Us start
+---------------
+*/
+#aboutUs{
+    margin:5rem 0;
+    .aboutNav{
+        li{
+            a{
+                color:#000;
+                font-size: 0.8em;
+            }
+        }
+    }
+    .aboutRight{
+        background: url(https://htmlstream.com/preview/unify-v2.6/multipage/marketing/assets/img-temp/300x300/img1.jpg);
+        padding: 5rem !important;
+        color:#fff;
+        border-radius: 50%;
+        position: relative;
+        .peopleCount{
+            font-size: 5rem;
+        }
+        .circleOverlay{
+            position: absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height: 100%;
+            background: $blue;
+            opacity: 0.9;
+            border-radius: 50%;
+
+        }
+        .circleAbout{
+            position: relative;
+            text-align: center
+        }
+        .circlePlay{
+            position: absolute;
+            background: $yellow;
+            padding: 20px 25px;
+            bottom:-90px;
+            border-radius: 50%; 
+            transition: all .2s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+
+
+
+/*
+---------------
+About Us end
+---------------
+*/

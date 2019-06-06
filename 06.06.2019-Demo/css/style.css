@@ -1,0 +1,233 @@
+.btn-pink {
+  background-color: #555555;
+  color: white; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 5000px; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.g-fill-white {
+  fill: white; }
+
+.g-fill-main {
+  fill: #555; }
+
+.g-fill-primary, .g-fill-primary path, .g-fill-primary polygon, .g-fill-primary--hover:hover path, .g-fill-primary--hover:hover polygon, *:hover > * > .g-fill-primary--hover-parent svg path, *:hover > * > .g-fill-primary--hover-parent svg polygon {
+  fill: #72c02c !important; }
+
+header {
+  padding: 20px 0; }
+  header nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; }
+    header nav > ul li a {
+      display: inline-block;
+      padding: 0px 20px;
+      text-decoration: none;
+      color: #555555;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bold; }
+    header nav > ul li:hover {
+      text-decoration: none;
+      color: #555555; }
+    header nav > ul li.active a {
+      color: #72c02c; }
+    header nav > ul li.dropdown {
+      position: relative; }
+      header nav > ul li.dropdown .inner-menu {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        padding: 0;
+        border-top: 2px solid #72c02c;
+        transition: all 0.3s linear; }
+        header nav > ul li.dropdown .inner-menu li a {
+          display: block;
+          background-color: white;
+          padding: 15px 10px;
+          padding-right: 50px; }
+      header nav > ul li.dropdown:hover .inner-menu {
+        visibility: visible;
+        opacity: 1; }
+
+main {
+  height: calc( 100vh - 78px );
+  background-image: url("../images/img2.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  main .wrapper {
+    line-height: 90px; }
+    main .wrapper .play {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 100%;
+      background-color: #555555;
+      color: white;
+      transition: all 0.3s linear;
+      font-size: 20px;
+      margin: auto; }
+      main .wrapper .play:hover {
+        background-color: #72c02c; }
+  main h5 {
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 5px; }
+  main h1 {
+    margin-top: 30px;
+    font-size: 3em; }
+  main .button-wrapper button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold; }
+    main .button-wrapper button:nth-child(2) {
+      background-color: #72c02c;
+      color: white;
+      border-color: #72c02c; }
+      main .button-wrapper button:nth-child(2):hover {
+        background-color: #7fd135; }
+
+#style-switcher {
+  position: fixed;
+  width: 20%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 9999;
+  box-shadow: -5px 0px 20px rgba(0, 0, 0, 0.24);
+  background-color: white;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in; }
+  #style-switcher.show {
+    transform: translateX(0%); }
+  #style-switcher #switch-toggle {
+    position: absolute;
+    top: 100px;
+    left: -60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #72c02c;
+    background-color: white;
+    font-size: 22px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.2); }
+
+.top-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999; }
+  .top-wrapper .go-top {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #555;
+    border-radius: 100%;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out; }
+    .top-wrapper .go-top:hover {
+      background-color: #72c02c;
+      color: white; }
+
+#provide {
+  padding: 50px; }
+  #provide .row > div {
+    padding: 30px; }
+  #provide .bordered {
+    border: 1px solid #ddd;
+    color: black;
+    transition: border 0.3s linear; }
+    #provide .bordered:hover {
+      border-color: transparent; }
+    #provide .bordered .order {
+      color: #555;
+      font-weight: bold;
+      font-size: 14px; }
+    #provide .bordered .icon {
+      color: #72c02c;
+      font-size: 25px; }
+    #provide .bordered .main-text {
+      margin: 25px 0; }
+    #provide .bordered .read-more {
+      color: #857d7d;
+      text-decoration: underline;
+      text-transform: uppercase;
+      transition: color 0.2s linear; }
+      #provide .bordered .read-more:hover {
+        color: #72c02c; }
+  #provide .circle {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #555555;
+    margin-right: 7px;
+    border-radius: 100%;
+    cursor: pointer; }
+    #provide .circle.active {
+      background-color: #72c02c; }
+
+#video .wrapper {
+  height: 600px;
+  overflow: hidden; }
+  #video .wrapper video {
+    position: relative;
+    top: -250px; }
+
+#projects {
+  padding: 70px 0; }
+  #projects .image-wrapper > div {
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    padding: 30px;
+    border-radius: 10px;
+    color: black; }
+    #projects .image-wrapper > div h4 {
+      font-size: 1.5em;
+      text-align: center;
+      margin-top: 40px; }
+    #projects .image-wrapper > div img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      transition: transform 0.2s ease-in-out; }
+    #projects .image-wrapper > div:hover img {
+      transform: scale(1.1); }
+    #projects .image-wrapper > div:hover h4 {
+      color: white; }
+    #projects .image-wrapper > div:nth-child(1):hover {
+      background-color: #9a69cb; }
+    #projects .image-wrapper > div:nth-child(2):hover {
+      background-color: #00bed6; }
+    #projects .image-wrapper > div:nth-child(3):hover {
+      background-color: #18ba9b; }
+    #projects .image-wrapper > div:nth-child(4):hover {
+      background-color: #72c02c; }
+    #projects .image-wrapper > div:nth-child(5):hover {
+      background-color: #9c8061; }
+    #projects .image-wrapper > div:nth-child(6):hover {
+      background-color: #e81c62; }
+
+/*# sourceMappingURL=style.css.map */
